@@ -20,6 +20,7 @@ var speed = 1000;//슬라이드 속도
   console.log($nav);
   $(document).on("click", '.nav_menu li', function () {
     if(enableNav){
+      console.log(enableNav);
     var slideNo = $(this).index();
     // var = ;
       $slide.slick('slickGoTo', slideNo);
@@ -37,17 +38,40 @@ var speed = 1000;//슬라이드 속도
       navStatus();
     }
     console.log(slideNo);
-    if(slideNo === 0){
-        $('.change_text').text('공새로는 자재조달 전체 업무 프로세스의 자동화를 제공합니다.');
-    } else if(slideNo===1){
-        $('.change_text').text('공새로는 데이터기반 건설현장 - 건자재 공급사 매칭 알고리즘 및 건자재 예측∙추천 서비스를 제공합니다.');
-    }else if(slideNo===2){
-        $('.change_text').text('공새로는 현장 위치 / 품목 / 평가 기반 적시배송 건자재 조달이 가능합니다.');
-        // $('#video3 source').play();
-    }else if(slideNo===3){
-        $('.change_text').text('공새로는 건자재 주요조건별 시세 정보제공 및 원가분석 서비스를 제공합니다.');
-    }
+
+
+    slideFnc(slideNo);
+    
   });
+
+  const slideFnc = (slideNo) =>{
+    if(slideNo === 0){
+      $('.title').text('1. 자재조달 업무 자동화');
+      $('.full2').css('background-color','#2a2a2a');
+      $('.change_text').text('공새로는 자재조달 전체 업무 프로세스의 자동화를 제공합니다.');
+    } else if(slideNo===1){
+      $('.title').text('2. 데이터분석');
+      $('.full2').css('background-color','#002863');
+      $('.change_text').text('공새로는 데이터기반 건설현장 - 건자재 공급사 매칭 알고리즘 및 건자재 예측∙추천 서비스를 제공합니다.');
+    }else if(slideNo===2){
+      $('.title').text('3. 적시배송');
+      $('.full2').css('background-color','#787878');
+      $('.change_text').text('공새로는 현장 위치 / 품목 / 평가 기반 적시배송 건자재 조달이 가능합니다.');
+      // $('#video3 source').play();
+    }else if(slideNo===3){
+      $('.title').text('4. 원가관리');
+      $('.full2').css('background-color','#020202');
+      $('.change_text').text('공새로는 건자재 주요조건별 시세 정보제공 및 원가분석 서비스를 제공합니다.');
+  }
+  }
+
+
+  $(document).on("click", '.slick-dots li', function () {
+    var slideNo = $(this).index();
+    
+    slideFnc(slideNo);
+  });
+
   function checkVisible( elm, eval ) {
         eval = eval || "object visible";
         var viewportHeight = $(window).height(), // Viewport Height

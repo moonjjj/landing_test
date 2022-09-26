@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js</title>
+	<link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="/css/examples.css" />
+    <link rel="stylesheet" href="css/index.css">
+	<style>
+        /* 참고하기 */
+		#section2 img{
+			left: 130%;
+			position:relative;
+      transition: all 600ms ease;
+		}
+		#section2 p{
+			opacity: 0;
+      transition: all 600ms ease;
+		}
+		#section3 .intro{
+			left: -130%;
+			position:relative;
+      transition: all 600ms ease;
+		}
+
+    #section3 .intro{
+      left: -130%;
+      position:relative;
+      transition: all 600ms ease;
+    }
+    body.fp-viewing-3rdPage #section3 .intro{
+       left: 0%;
+    }
+	</style>
+</head>
+<body>
+
+
+<!-- <ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+</ul> -->
+
+<header id="header">
+    <div class="header_inner">
+        <h1><a href="/"><img src="/img/top_logo.png" class="gong_logo" alt="GONGSAERO 공새로 로고"></a></h1>
+        <nav class="gnb">
+            <ul>
+                <li class="home_select"><a href="/" id="txt5">홈</a></li>
+                <li><a href="#" id="txt6">회사소개</a>
+                    <ul class="sub_menu">
+                        <li><a href="/company" id="txt7">사업영역</a></li>
+                        <li><a href="/history" id="txt8">연혁</a></li>
+                        <li><a href="/vision" id="txt9">비전</a></li>
+                        <li><a href="/way_to_come" id="txt10">오시는 길</a></li>
+                        <li><a href="/ci" id="txt286">CI</a></li>
+                    </ul>
+                </li>
+                <li><a href="/service" id="txt11">서비스</a></li>
+                <li><a href="#" id="txt12">이용안내</a>
+                    <ul class="sub_menu">
+                        <li><a href="/faq" id="txt13">FAQ</a></li>
+                        <li><a href="/how_to_use" id="txt14">이용방법</a></li>
+                        <li><a href="/process" id="txt15">조달 프로세스</a></li>
+                        <li><a href="/how_to_use_data" id="txt16">데이터 활용 방법</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" id="txt17">커뮤니티</a>
+                    <ul class="sub_menu">
+                        <li><a href="/press" id="txt18">공새로소식</a></li>
+                        <li><a href="/notice/notice_list" id="txt19">공지사항</a></li>
+                        <li><a href="/recruit/recruit_list">인재/채용</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact">Contact</a></li>
+                <!-- <li class="global_btn_box">
+                    <input id="toggle-on" class="toggle toggle-left" name="toggle" value="KR" type="radio">
+                    <label for="toggle-on" class="btn_lang toggle-on" onClick="chgLanguage('ko')">KR</label>
+                    <input id="toggle-off" class="toggle toggle-right" name="toggle" value="EN" type="radio">
+                    <label for="toggle-off" class="btn_lang toggle-off" onClick="chgLanguage('en')">EN</label>
+                </li> -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="fullpage">
+	<!-- <div class="section " id="section1">
+    <div class="intro">
+    </div>
+	</div> -->
+    <div class="section" id="section1">
+        <div class="main_container">
+            <p>Welcome to 공새로</p>
+            <p class="desc">건설현장 맞춤형 자재 조달 솔루션, 공새로를 만나보세요!</p>
+            <p class="youtube_modal" onClick="console.log('asdf');">
+                소개영상보기
+                <img src="/img/youtube_icon.png" class="youtube_icon"/>
+            </p>
+            <div class="first_link">
+                <a href="https://customer.gongsaero.com/" class="btn10" target="_blank">
+                    <div>
+                        <span class="first_link_title">건설현장 고객사</span>
+                        <span class="first_link_desc">
+                            <span>for 건설자재</span>
+                            <span style="color:#ff6600;">주문</span>
+                            <span>을 위한</span>
+                        </span>
+                    </div>
+                    <div class="transition"></div>
+                </a>
+                <a href="https://partner.gongsaero.com/" class="btn10" target="_blank">
+                    <div>
+                        <span class="first_link_title">건설자재 공급사</span>
+                        <span class="first_link_desc">
+                            <span>for 건설자재</span>
+                            <span style="color:#ff6600;">공급</span>
+                            <span>을 위한</span>
+                        </span>
+                    </div>
+                    <div class="transition"></div>
+                </a>
+            </div>
+            <!-- <div class="main_img_container"> -->
+                <canvas id="canvas" width="1300" height="800"></canvas>
+                <img src="img/gong_only_logo.png" alt="" class="full1_gong_logo">
+                <!-- </div> -->
+                
+                
+            </div>
+    </div>
+	<div class="section" id="section2">
+		<!-- <div class="intro">
+			<img src="imgs/1.png" alt="Cool" />
+			<h1>From the callbacks</h1>
+			<p>Animation fired through fullPage.js callbacks, making use of css3 transitions.</p>
+		</div> -->
+
+        <div class="full2" pageNum="2">
+			<!-- <div class="second_title">
+				<h2>서비스</h2>
+				<h3>Solution</h3>
+			</div> -->
+
+			<div class="full_desc_container">
+				<span class="title">서비스</span>
+				<span class="sub_title">최고의 솔루션, 공사의 자동화<br/> 빅데이터 솔루션을 더하다</span>
+				<span class="change_text">공새로는 자재조달 전체 업무 프로세스의 자동화를 제공합니다.</span>
+				<img src="img/gong_only_logo.png" alt="" class="bg_img">
+			</div>
+			<div class="full2_container">
+			<ul class="nav_menu">
+				<li class="on">
+					<span>01</span>
+					<span>자재조달 업무 자동화</span>
+					<img src="img/play_icon2.png" alt="">
+				</li>
+				<li>
+					<span>02</span>
+					<span>데이터분석</span>
+					<img src="img/play_icon2.png" alt="">
+				</li>
+				<li>
+					<span>03</span>
+					<span>적시배송</span>
+					<img src="img/play_icon2.png" alt="">
+				</li>
+				<li>
+					<span>04</span>
+					<span>원가관리</span>
+					<img src="img/play_icon2.png" alt="">
+				</li>
+			</ul>
+
+			<div class="full2_slider" id="slide">
+				<div class="full2_process">
+					<div class="full2_inner">
+						<video autoplay muted>
+							<source src="img/video_1.mp4"
+									type="video/mp4">
+							Sorry, your browser doesn't support embedded videos.
+						</video>
+					</div>
+				</div>
+				<div class="full2_process">
+					<div class="full2_inner" style="background:#f7f4f5">
+						<div class="full2_iframe">
+							<video controls muted>
+								<source src="img/video_2.mp4"
+										type="video/mp4">
+								Sorry, your browser doesn't support embedded videos.
+							</video>
+						</div>
+					</div>
+				</div>
+				<div class="full2_process">
+					<div class="full2_inner" style="background:#f7f4f5">
+						<div class="full2_iframe">
+							<video controls muted>
+								<source src="img/video_3.mp4"
+										type="video/mp4">
+								Sorry, your browser doesn't support embedded videos.
+							</video>
+						</div>
+					</div>
+				</div>
+				<div class="full2_process">
+					<div class="full2_inner" style="background:#fefcfd">
+						<div class="full2_iframe">
+							<video controls muted>
+								<source src="img/video_4.mp4"
+										type="video/mp4">
+								Sorry, your browser doesn't support embedded videos.
+							</video>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="section" id="section3">
+		<!-- <div class="intro">
+			<h1>Cool uh?</h1>
+			<p>Choose the best easing effect for your site!</p>
+		</div> -->
+        <div class="full_desc_container">
+            <span class="title">데이터 분석</span>
+            <span class="sub_title">맞춤형 건자재 예측 및 추천 서비스</span>
+            <span class="desc_text">공새로 건설현장 발주 데이터와 건자재 속성 데이터를 FactorizationMachine 모델기반 학습을 통해 데이터 분류 및 유효 데이터를 출력하여 데이터 기반 건설현장 맞춤형 건자재 예측 및 추천 서비스가 가능합니다.</span>
+            <img src="img/gong_only_logo.png" alt="" class="bg_img">
+        </div>
+        <div class="full3_container">
+            <img src="/img/data_img_pc.png" alt="" class="main_img">
+        </div>
+	</div>
+
+
+
+    <div class="section" id="section4">
+        <div class="full_desc_container full_desc2_container">
+            <span class="title">협력</span>
+            <span class="sub_title">공새로와 함께하실 분</span>
+            <span class="desc_text">아래 폼 입력하시믄 됩니다.</span>
+            <!-- <img src="img/gong_only_logo.png" alt="" class="bg_img"> -->
+            <div class="full4_form_inner">
+                <form action="/contact" method="post" onsubmit="submitFunction();">
+                    <input type="text" name="name" placeholder="이름(name)" id="test">
+                    <input type="text" name="company" placeholder="소속 회사 (company name)">
+                    <input type="text" name="phone" placeholder="연락처 (phone number)">
+                    <input type="email" name="e-mail" placeholder="연락 받으실 이메일 (email)">
+                    <textarea rows="8" name="content" value="문의 내용" placeholder="문의 내용 (contact detail)"></textarea>
+                    <input type="submit" value="Send Mail" onclick="submitCheck();">
+                </form>
+            </div>
+        </div>
+        <div class="full4_container">
+            <div id="map" style="width:300px;height:500px;margin:-50px 30px;border:1px solid #d2d2d2;"></div>
+            <div class="icon_box">
+                <div class="full4_contact_inner">
+                    <div class="full4_contact_location contact_box">
+                        <div class="left"> 
+                            <img src="/img/contact_location.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div>
+                                <h4>Location</h4>
+                                <h5 id="txt39">인천시 연수구 컨벤시아대로 204, 522호 (송도동)</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full4_contact_email contact_box">
+                        <div class="left"> 
+                            <img src="/img/contact_email.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div>
+                                <h4>E-mail</h4>
+                                <h5>contact@gongsaero.com</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full4_contact_call contact_box">
+                        <div class="left"> 
+                            <img src="/img/contact_phone.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div>
+                                <h4>Call</h4>
+                                <h5>070-8098-8224</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full4_partner_container">
+
+        <div class="fourth_slack_container">
+            <img alt="hiz" src="/img/fifth_arrow_left_icon.png" class="slick_prev"/>
+            <div class="slick_slide">
+                <div class="fourth_slide_elem">
+                    <span id="txt323">건설사</span>
+                    <div class="fourth_slide_logo_box">
+                        <img src="img/logo/posco_logo.png" alt="">
+                        <img src="img/logo/dl_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="fourth_slide_elem">
+                    <span id="txt324">PoC 협의중</span>
+                    <div class="fourth_slide_logo_box">
+                        <img src="img/logo/samsung_logo.png" alt="">
+                        <img src="img/logo/hoban_logo.png" alt="">
+                        <img src="img/logo/eland_logo.png" alt="">
+                        <img src="img/logo/howbuild_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="fourth_slide_elem">
+                    <span id="txt325">건설자재</span>
+                    <div class="fourth_slide_logo_box">
+                        <img src="img/logo/poscointernational_logo.png" alt="">
+                        <img src="img/logo/innovilt_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="fourth_slide_elem">
+                    <span id="txt326">스케일업</span>
+                    <div class="fourth_slide_logo_box">
+                        <img src="img/logo/postect_holdings_logo.png" alt="">
+                        <img src="img/logo/incheoncenter_logo.png" alt="">
+                        <img src="img/logo/tap_angel_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="fourth_slide_elem">
+                    <span id="txt327">AI데이터 분석</span>
+                    <div class="fourth_slide_logo_box">
+                        <img src="img/logo/select_star_logo.png" alt="">
+                        <img src="img/logo/wedatalab_logo.png" alt="">
+                        <img src="img/logo/mondrian_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="fourth_slide_elem">
+                    <span id="txt328">지식재산권</span>
+                    <div class="fourth_slide_logo_box">
+                        <img src="img/logo/sigong_logo.png" alt="">
+                        <img src="img/logo/ank_logo.png" alt="" style="width:calc(100vw * (30/1920))">
+                    </div>
+                </div>
+                <div class="fourth_slide_elem">
+                    <span id="txt329">글로벌 진출</span>
+                    <div class="fourth_slide_logo_box">
+                        <img src="img/logo/next_challenge_logo.png" alt="">
+                        <img src="img/logo/poscointernational_logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+                <img alt="hiz" src="/img/fifth_arrow_icon.png" class="slick_next"/>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section" id="section5">
+        <div class="full5_container">
+            <!-- <img src="/img/gong_last_slide.jpg" alt="" class="last_slide"> -->
+            <div class="last_bg_img">
+                <div class="bg_inner">
+                    <div class="typing_title">
+                        <span class="typing_text"></span><span class="blink">|</span>
+                    </div>
+                    <div class="last_logo_img">
+                        <img src="/img/gong_eng2_logo.png" alt="">
+                        <span>GONGSAERO Co., Ltd.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="last_content">
+                <div class="content_desc">
+                    공새로는 건설 전 생애주기 중에 구매조달부분에서 디지털 전환을 만들어 나가겠습니다.
+                </div>
+            </div> -->
+        </div>
+
+
+        <footer id="footer">
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <p><span>고객센터</span>070-8098-8224</p>
+                    <div class="top_link">
+                        <a href="/terms">이용약관</a>
+                        <a href="/privacy">개인정보처리방침</a>
+                    </div>
+                </div>
+                <div class="footer_mid">
+                    <p id="txt244">상호명 : 주식회사 공새로 | 사업자등록번호 : 670-87-02114 | 통신판매신고 : 제2021-인천연수구-2330호 | 전화번호 : 070-8098-8224 </p>
+                    <p id="txt245">주소 : 인천광역시 연수구 컨벤시아대로 204 인천스타트업파크 인스타I (송도동) | 문의메일 : contact@gongsaero.com | 대표자 : 남가람 </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/fullpage.js"></script>
+<script type="text/javascript" src="/js/examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#020202', '#fff', '#fff', '#fff', '#020202'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+        continuousVertical: true,
+      navigation: true,
+        afterLoad: function(origin, destination, direction){
+            //section 2
+            if(destination.index == 1){
+                document.querySelector('#section2').querySelector('img').style.left = 0 + 'px';
+                document.querySelector('#section2').querySelector('p').style.opacity = 1;
+            }
+
+            //back to original state
+            else if(origin && origin.index == 1){
+                document.querySelector('#section2').querySelector('img').style.left = 130 + '%';
+                document.querySelector('#section2').querySelector('p').style.opacity = 0;
+            }
+
+            //section 3 is using the state classes to fire the animation
+            //see the CSS code above!
+        }
+    });
+</script>
+
+</body>
+<script type="importmap">
+	{
+		"imports": {
+			"three": "https://unpkg.com/three@0.141.0/build/three.module.js",
+			"GLTFLoader" : "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js",
+			"OrbitControls" : "https://threejs.org/examples/jsm/controls/OrbitControls.js"
+		}
+	}
+</script>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6b921b6cd90de17a357095d2396e601c"></script>
+<script type="module">
+	import {GLTFLoader} from 'GLTFLoader';
+	import * as THREE from 'three';
+	
+	let scene = new THREE.Scene();
+	let renderer = new THREE.WebGLRenderer({
+		canvas : document.querySelector("#canvas"),
+		antialias : true
+	});
+	renderer.outputEncoding = THREE.sRGBEncoding;
+
+	//rendering
+	// 맨앞에거로 크기조절
+	let camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 100, 10000);
+	camera.position.set(100,250,10000);
+
+	// rendering2
+	// let camera = new THREE.PerspectiveCamera(700, window.innerWidth / window.innerHeight, 1, 1000);
+	// camera.position.set(1,1,10);
+
+	// scene.background - new THREE.Color('white');
+	// let light = new THREE.DirectionalLight(0xffff00, 10);
+	// scene.add(light);
+
+	let hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 3); scene.add(hemiLight);
+  
+  let light = new THREE.SpotLight(0xffa95c,5); light.position.set(-0,50,50); 
+  light.castShadow = true; 
+  scene.add( light );
+
+
+  const pointLight = new THREE.PointLight( 0xff0000, 1, 100 );
+  pointLight.position.set( 10, 10, 10 );
+  scene.add( pointLight );
+
+	let loader = new GLTFLoader();
+	loader.load('rendering/scene.gltf', function(gltf){
+		scene.add(gltf.scene);
+		// gltf.scene.rotation.z += 0.7
+		// gltf.scene.rotation.x += 0.2
+		renderer.render(scene, camera);
+		function animate(){
+			requestAnimationFrame(animate)
+			gltf.scene.rotation.y -= 0.001
+			renderer.render(scene, camera);
+		}
+		animate()
+
+
+
+
+		// 카메라와 마우스 상호작용을 위해 OrbitControls를 설정합니다.       
+		//  controls = new OrbitControls(camera ,canvas);        
+		// controls.rotateSpeed = 1.0; // 마우스로 카메라를 회전시킬 속도입니다. 기본값(Float)은 1입니다.       
+		//  controls.zoomSpeed = 1.2; // 마우스 휠로 카메라를 줌 시키는 속도 입니다. 기본값(Float)은 1입니다.        
+		// controls.panSpeed = 0.8; // 패닝 속도 입니다. 기본값(Float)은 1입니다.        
+		// controls.minDistance = 5; // 마우스 휠로 카메라 거리 조작시 최소 값. 기본값(Float)은 0 입니다.        
+		// controls.maxDistance = 100; // 마우스 휠로 카메라 거리 조작시 최대 값. 기본값(Float)은 무제한 입니다.        
+		// function animate() {            
+		//     requestAnimationFrame(animate);            
+		//     renderer.render(scene, camera);            
+		//     controls.update(); // 마우스로인해 변경된 카메라값을 업데이트 합니다.        
+		// }        
+		// animate();
+
+
+
+
+
+
+
+
+	});
+</script> 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<script src="js/slick_service.js"></script>
+
+<script>
+
+    // header 관련
+    $(function(){
+        //gnb slide
+        $('.gnb>ul>li').mouseenter(function(){
+            $(this).find('.sub_menu').stop().slideDown(200)
+        })
+        $('.gnb>ul>li').mouseleave(function(){
+            $(this).find('.sub_menu').stop().slideUp(200)
+        })
+        $('.gnb>ul>li').focusin(function(){
+            $(this).find('.sub_menu').stop().slideDown(200)
+        })
+        $('.gnb>ul>li').focusout(function(){
+            $(this).find('.sub_menu').stop().slideUp(200)
+        })
+        
+        // mobile menu
+        let toggleNum = 0
+        $('.menu_toggle').click(function(){
+            toggleNum++
+            if(toggleNum%2==1){
+                $('.mob_menu').css('display','block')
+            }else{
+                $('.mob_menu').css('display','none')
+            }
+        })
+    })
+
+
+    // section5 typing
+    const typing = (page) =>{
+		const content = "공사의\n새로운\n로드맵을\n만들어 나가는,";
+		const text = document.querySelector(".typing_text");
+		let i = 0;
+
+		var to = setInterval(function(){
+			let txt = content[i++];
+			console.log(text);
+			console.log(text.innerHTML);
+			console.log(content);
+			
+			text.innerHTML += txt=== "\n" ? "<br/>": txt;
+
+			if(txt === undefined || i === 21){
+				clearInterval(to);
+			}
+			if(page.index() !== 3){
+				alert('asdf');
+				clearInterval(to);
+				clearTimeout(to);
+			}
+		}, 300);
+	}
+</script>
+</html>

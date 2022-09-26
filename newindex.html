@@ -1,0 +1,573 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+        <link rel="stylesheet" type="text/css" href="css/newindex.css" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <title>asdf</title>
+
+    </head>
+    <body>
+        <header id="header">
+            <div class="header_inner">
+                <h1><a href="/"><img src="/img/top_logo.png" class="gong_logo" alt="GONGSAERO 공새로 로고"></a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li class="home_select"><a href="/" id="txt5">홈</a></li>
+                        <li><a href="#" id="txt6">회사소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="/company" id="txt7">사업영역</a></li>
+                                <li><a href="/history" id="txt8">연혁</a></li>
+                                <li><a href="/vision" id="txt9">비전</a></li>
+                                <li><a href="/way_to_come" id="txt10">오시는 길</a></li>
+                                <li><a href="/ci" id="txt286">CI</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/service" id="txt11">서비스</a></li>
+                        <li><a href="#" id="txt12">이용안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="/faq" id="txt13">FAQ</a></li>
+                                <li><a href="/how_to_use" id="txt14">이용방법</a></li>
+                                <li><a href="/process" id="txt15">조달 프로세스</a></li>
+                                <li><a href="/how_to_use_data" id="txt16">데이터 활용 방법</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="txt17">커뮤니티</a>
+                            <ul class="sub_menu">
+                                <li><a href="/press" id="txt18">공새로소식</a></li>
+                                <li><a href="/notice/notice_list" id="txt19">공지사항</a></li>
+                                <li><a href="/recruit/recruit_list">인재/채용</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact">Contact</a></li>
+                        <!-- <li class="global_btn_box">
+                            <input id="toggle-on" class="toggle toggle-left" name="toggle" value="KR" type="radio">
+                            <label for="toggle-on" class="btn_lang toggle-on" onClick="chgLanguage('ko')">KR</label>
+                            <input id="toggle-off" class="toggle toggle-right" name="toggle" value="EN" type="radio">
+                            <label for="toggle-off" class="btn_lang toggle-off" onClick="chgLanguage('en')">EN</label>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div id="fullpage">
+            <div class="section sec1 active">
+                <div class="main_container">
+                    <p>Welcome to 공새로</p>
+                    <p class="desc">건설현장 맞춤형 자재 조달 솔루션, 공새로를 만나보세요!</p>
+                    <!-- <p class="youtube_modal" onClick="console.log('asdf');">
+                        소개영상보기
+                        <img src="/img/youtube_icon.png" class="youtube_icon"/>
+                    </p> -->
+
+                    
+                    <span class="youtube_modal_btn">
+                        <img src="/img/youtube_icon.png" class="youtube_icon"/>
+                    </span>
+                    <div class="modal">
+                        <div class="modal_content">
+                            <img src="/img/x_icon.png" alt="x" class="x_icon">
+                            <iframe src="https://www.youtube.com/embed/IK547gsGw-4?autoplay=0&mute=0;playlist=IK547gsGw-4" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="first_link">
+                        <a href="https://customer.gongsaero.com/" class="btn10" target="_blank">
+                            <div>
+                                <span class="first_link_title">건설현장 고객사</span>
+                                <span class="first_link_desc">
+                                    <span>for 건설자재</span>
+                                    <span style="color:#ff6600;">주문</span>
+                                    <span>을 위한</span>
+                                </span>
+                            </div>
+                            <div class="transition"></div>
+                        </a>
+                        <a href="https://partner.gongsaero.com/" class="btn10" target="_blank">
+                            <div>
+                                <span class="first_link_title">건설자재 공급사</span>
+                                <span class="first_link_desc">
+                                    <span>for 건설자재</span>
+                                    <span style="color:#ff6600;">공급</span>
+                                    <span>을 위한</span>
+                                </span>
+                            </div>
+                            <div class="transition"></div>
+                        </a>
+                    </div>
+                    <!-- <div class="main_img_container"> -->
+                        <canvas id="canvas" width="1500" height="1500"></canvas>
+                        <img src="img/gong_only_logo.png" alt="" class="full1_gong_logo">
+                        <!-- </div> -->
+                        <!-- <canvas id="canvas2" width="80" height="600"></canvas> -->
+                        
+                    </div>
+            </div>
+            <div class="section sec2">
+                <!-- <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><h1>Section2</h1>Slide 1</div>
+                        <div class="swiper-slide"><h1>Section2</h1>Slide 2</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div> -->
+                <div class="full2">
+                <div class="full_desc_container">
+                    <span class="sub_title">건자재 조달 프로세스 개선 <br/> 빅데이터 솔루션을 더하다</span>
+                    <span class="line"></span>
+                    <span class="title">1. 자재조달 업무 자동화</span>
+                    <span class="change_text">공새로는 자재조달 전체 업무 프로세스의 자동화를 제공합니다.</span>
+                    <img src="img/gong_only_logo.png" alt="" class="bg_img">
+                </div>
+                <div class="full2_container">
+                <ul class="nav_menu">
+                    <li class="on">
+                        <span>01</span>
+                        <span>자재조달 업무 자동화</span>
+                        <!-- <img src="img/play_icon2.png" alt=""> -->
+                    </li>
+                    <li>
+                        <span>02</span>
+                        <span>데이터분석</span>
+                        <!-- <img src="img/play_icon2.png" alt=""> -->
+                    </li>
+                    <li>
+                        <span>03</span>
+                        <span>적시배송</span>
+                        <!-- <img src="img/play_icon2.png" alt=""> -->
+                    </li>
+                    <li>
+                        <span>04</span>
+                        <span>원가관리</span>
+                        <!-- <img src="img/play_icon2.png" alt=""> -->
+                    </li>
+                </ul>
+    
+                <div class="full2_slider" id="slide">
+                    <div class="full2_process">
+                        <div class="full2_inner">
+                            <video autoplay muted>
+                                <source src="img/video_1.mp4"
+                                        type="video/mp4">
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                    </div>
+                    <div class="full2_process">
+                        <div class="full2_inner" style="background:#f7f4f5">
+                            <div class="full2_iframe">
+                                <video controls muted>
+                                    <source src="img/video_2.mp4"
+                                            type="video/mp4">
+                                    Sorry, your browser doesn't support embedded videos.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full2_process">
+                        <div class="full2_inner" style="background:#f7f4f5">
+                            <div class="full2_iframe">
+                                <video controls muted>
+                                    <source src="img/video_3.mp4"
+                                            type="video/mp4">
+                                    Sorry, your browser doesn't support embedded videos.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="full2_process">
+                        <div class="full2_inner" style="background:#fefcfd">
+                            <div class="full2_iframe">
+                                <video controls muted>
+                                    <source src="img/video_4.mp4"
+                                            type="video/mp4">
+                                    Sorry, your browser doesn't support embedded videos.
+                                </video>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="section sec3">
+                <div class="flex">
+
+                    <div class="full_desc_container2">
+                        <span class="title">데이터 분석</span>
+                        <span class="sub_title">맞춤형 건자재 예측 및 추천 서비스</span>
+                        <span class="desc_text">공새로 건설현장 발주 데이터와 건자재 속성 데이터를 FactorizationMachine 모델기반 학습을 통해 데이터 분류 및 유효 데이터를 출력하여 데이터 기반 건설현장 맞춤형 건자재 예측 및 추천 서비스가 가능합니다.</span>
+                        <img src="img/gong_only_logo.png" alt="" class="bg_img">
+                    </div>
+                    <div class="full3_container">
+                        <img src="/img/data_img_pc.png" alt="" class="main_img">
+                    </div>
+                </div>
+            </div>   
+            <div class="section sec4">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="typo1">
+                                <p>공새로</p>
+                                <span>건자재를</span>
+                                <span><strong>적시에 공급</strong>받을 수 있고</span>
+                                <span><strong>체계적인 데이터 관리</strong>를</span>
+                                <span>도와주는 서비스입니다.</span>
+                            </div>
+                            <div class="architecture_img"></div>
+                            <!-- <img src="img/world_map_dots.png" alt="" class="world_map_dots_img"> -->
+                            <div class="bg_layer">
+                                <div class="text_is_gong">
+                                    GONG<br/>SAERO
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="typo2">
+                                <p>공새로</p>
+                                <span>건자재 조달과정의</span>
+                                <span>비효율성을</span>
+                                <span><strong>디지털전환</strong>으로</span>
+                                <span>해결해나가겠습니다.</span>
+                            </div>
+                            <div class="bg_layer">
+                                <img src="img/world_map.svg" alt="" class="world_map_img">
+                                <div class="pin1">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin1 test">
+                                    원가절감
+                                </div>
+                                <!-- <div class="pin2">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin2 test">
+                                    시간단축
+                                </div> -->
+                                <div class="pin3">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin3 test">
+                                    투명성 확보
+                                </div>
+                                <div class="pin4">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin4 test">
+                                    건자재상 효율증대
+                                </div>
+                                <div class="pin5">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin5 test2">추가 매출</div>
+                                <div class="pin6">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin6 test2">재고 관리</div>
+                                <div class="pin7">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin7 test2">미수금 리스크 관리</div>
+                                <div class="pin8">
+                                    <div class="pulse"></div>
+                                </div>
+                                <div class="pin8 test2">시간 단축</div>
+                                <div class="text_is_saero">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>  
+            <div class="section sec5 fp-auto-height">
+                <div class="inner_container">
+                    <div class="inner">
+                        <div class="left_area">
+                            <h2 class="inner_tit scrollreveal animated">Contact us<span><img src="https://websrepublic.co.kr/theme/websrepublic-white/img/foot_wave_img.png"></span></h2>
+                            <div class="left_inner_con scrollreveal animated">궁금하신 사항을 남겨주세요!<br>확인 후 빠른 답변 드리겠습니다.</div>
+                            <ul class="info_list">
+                                <li class="icon1 scrollreveal animated" >A. 인천광역시 송도동 컨벤시아대로 204 인스타1 522호</li>
+                                <li class="icon2 scrollreveal animated">E. gongsaero@contact.com</li>
+                                <li class="icon3 scrollreveal animated">M. 070-8098-8224</li>
+                            </ul>
+                        </div>
+                        <div class="right_area">
+                            <div id="formmail" class="new_win mbskin">
+                                <form action="/contact" method="post" onsubmit="submitFunction();">
+                                    <ul class="field_list">
+                                        <li class="scrollreveal animated" style="">
+                                            <input type="text" name="name" placeholder="이름(name)" id="test">
+                                        </li>
+                                        <li class="scrollreveal animated" style="">
+                                            <input type="text" name="company" placeholder="소속 회사 (company name)">
+                                        </li>
+                                        <li class="scrollreveal animated" style="">
+                                            <input type="text" name="phone" placeholder="연락처 (phone number)">
+                                        </li>
+                                        <li class="scrollreveal animated" style="">
+                                            <input type="email" name="e-mail" placeholder="연락 받으실 이메일 (email)">
+                                        </li>
+                                        <li class="scrollreveal animated" style="">
+                                            <textarea rows="8" name="content" value="문의 내용" placeholder="문의 내용 (contact detail)"></textarea>
+                                        </li>
+                                    </ul>
+
+                                    <div class="btn_area scrollreveal animated" style="">
+                                        <input type="submit" value="Send Mail" onclick="submitCheck();">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="full4_partner_container">
+
+                    <div class="fourth_slack_container">
+                        <img alt="hiz" src="/img/fifth_arrow_left_icon.png" class="slick_prev"/>
+                        <div class="slick_slide">
+                            <div class="fourth_slide_elem">
+                                <span id="txt323">건설사</span>
+                                <div class="fourth_slide_logo_box">
+                                    <img src="img/logo/posco_logo.png" alt="">
+                                    <img src="img/logo/dl_logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fourth_slide_elem">
+                                <span id="txt324">PoC 협의중</span>
+                                <div class="fourth_slide_logo_box">
+                                    <img src="img/logo/samsung_logo.png" alt="">
+                                    <img src="img/logo/hoban_logo.png" alt="">
+                                    <img src="img/logo/eland_logo.png" alt="">
+                                    <img src="img/logo/howbuild_logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fourth_slide_elem">
+                                <span id="txt325">건설자재</span>
+                                <div class="fourth_slide_logo_box">
+                                    <img src="img/logo/poscointernational_logo.png" alt="">
+                                    <img src="img/logo/innovilt_logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fourth_slide_elem">
+                                <span id="txt326">스케일업</span>
+                                <div class="fourth_slide_logo_box">
+                                    <img src="img/logo/postect_holdings_logo.png" alt="">
+                                    <img src="img/logo/incheoncenter_logo.png" alt="">
+                                    <img src="img/logo/tap_angel_logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fourth_slide_elem">
+                                <span id="txt327">AI데이터 분석</span>
+                                <div class="fourth_slide_logo_box">
+                                    <img src="img/logo/select_star_logo.png" alt="">
+                                    <img src="img/logo/wedatalab_logo.png" alt="">
+                                    <img src="img/logo/mondrian_logo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="fourth_slide_elem">
+                                <span id="txt328">지식재산권</span>
+                                <div class="fourth_slide_logo_box">
+                                    <img src="img/logo/sigong_logo.png" alt="">
+                                    <img src="img/logo/ank_logo.png" alt="" style="width:calc(100vw * (30/1920))">
+                                </div>
+                            </div>
+                            <div class="fourth_slide_elem">
+                                <span id="txt329">글로벌 진출</span>
+                                <div class="fourth_slide_logo_box">
+                                    <img src="img/logo/next_challenge_logo.png" alt="">
+                                    <img src="img/logo/poscointernational_logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                            <img alt="hiz" src="/img/fifth_arrow_icon.png" class="slick_next"/>
+                        </div>
+                </div> -->
+
+            </div>
+            <div class="section sec6">
+                <div class="full6_container">
+                    <!-- <img src="/img/gong_last_slide.jpg" alt="" class="last_slide"> -->
+                    <div class="last_bg_img">
+                        <div class="bg_inner">
+                            <div class="typing_title">
+                                <span class="typing_text"></span><span class="blink">|</span>
+                            </div>
+                            <div class="last_logo_img">
+                                <img src="/img/gong_eng2_logo.png" alt="">
+                                <span>GONGSAERO Co., Ltd.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <footer id="footer">
+                    <div class="footer_wrap">
+                        <div class="footer_top">
+                            <p><span>고객센터</span>070-8098-8224</p>
+                            <div class="top_link">
+                                <a href="/terms">이용약관</a>
+                                <a href="/privacy">개인정보처리방침</a>
+                            </div>
+                        </div>
+                        <div class="footer_mid">
+                            <p id="txt244">상호명 : 주식회사 공새로 | 사업자등록번호 : 670-87-02114 | 통신판매신고 : 제2021-인천연수구-2330호 | 전화번호 : 070-8098-8224 </p>
+                            <p id="txt245">주소 : 인천광역시 연수구 컨벤시아대로 204 인천스타트업파크 인스타I (송도동) | 문의메일 : contact@gongsaero.com | 대표자 : 남가람 </p>
+                        </div>
+                    </div>
+                </footer>
+            </div> 
+        </div>
+        <!-- <div class="fixed_gongsaero">
+            <span class="first_title">GONGSAERO</span>
+            <span class="second_title">We Build New Way!</span>
+        </div> -->
+    </body>
+    <script src="/js/newindex.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
+                "GLTFLoader" : "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js",
+                "OrbitControls" : "https://threejs.org/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6b921b6cd90de17a357095d2396e601c"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+        <script src="js/slick_service.js"></script>
+
+    <script type="module">
+        import {GLTFLoader} from 'GLTFLoader';
+        import * as THREE from 'three';
+        
+        let scene = new THREE.Scene();
+        let renderer = new THREE.WebGLRenderer({
+            canvas : document.querySelector("#canvas"),
+            antialias : true
+        });
+        renderer.outputEncoding = THREE.sRGBEncoding;
+        let camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 100, 10000);
+        camera.position.set(100,250,10000);
+        camera.aspect = canvas.clientWidth / canvas.clientHeight;
+        camera.updateProjectionMatrix();
+
+        let hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 3); scene.add(hemiLight);
+      
+      let light = new THREE.SpotLight(0xffa95c,5); light.position.set(-0,50,50); 
+      light.castShadow = true; 
+      scene.add( light );
+    
+    
+      const pointLight = new THREE.PointLight( 0xff0000, 1, 100 );
+      pointLight.position.set( 10, 10, 10 );
+      scene.add( pointLight );
+    
+        let loader = new GLTFLoader();
+        loader.load('rendering/scene.gltf', function(gltf){
+            scene.add(gltf.scene);
+            // gltf.scene.rotation.z += 0.7
+            // gltf.scene.rotation.x += 0.2
+            renderer.render(scene, camera);
+            function animate(){
+                requestAnimationFrame(animate)
+                gltf.scene.rotation.y -= 0.001
+                renderer.render(scene, camera);
+            }
+            animate()
+    
+        });
+
+
+    // header 관련
+    $(function(){
+        //gnb slide
+        $('.gnb>ul>li').mouseenter(function(){
+            $(this).find('.sub_menu').stop().slideDown(200)
+        })
+        $('.gnb>ul>li').mouseleave(function(){
+            $(this).find('.sub_menu').stop().slideUp(200)
+        })
+        $('.gnb>ul>li').focusin(function(){
+            $(this).find('.sub_menu').stop().slideDown(200)
+        })
+        $('.gnb>ul>li').focusout(function(){
+            $(this).find('.sub_menu').stop().slideUp(200)
+        })
+        
+        // mobile menu
+        let toggleNum = 0
+        $('.menu_toggle').click(function(){
+            toggleNum++
+            if(toggleNum%2==1){
+                $('.mob_menu').css('display','block')
+            }else{
+                $('.mob_menu').css('display','none')
+            }
+        })
+
+        // modal
+        $(".youtube_modal_btn").click(function(){
+            $(".modal").fadeIn();
+        });
+        
+        $(".modal_content").click(function(){
+            $(".modal").fadeOut();
+        });
+        // $(".sec1").click(function(){
+        //     $(".modal").fadeOut();
+        // });
+        $(".x_icon").click(function(){
+            $(".modal").fadeOut();
+        });
+
+    })
+
+    // section5 typing
+    const typing = (page) =>{
+		const content = "공사의\n새로운\n로드맵을\n만들어 나가는,";
+		const text = document.querySelector(".typing_text");
+		let i = 0;
+
+		var to = setInterval(function(){
+			let txt = content[i++];
+			console.log(text);
+			console.log(text.innerHTML);
+			console.log(content);
+			
+			text.innerHTML += txt=== "\n" ? "<br/>": txt;
+
+			if(txt === undefined || i === 21){
+				clearInterval(to);
+			}
+			if(page.index() !== 3){
+				alert('asdf');
+				clearInterval(to);
+				clearTimeout(to);
+			}
+		}, 300);
+	}
+    </script> 
+    
+</html>
+
+
